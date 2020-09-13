@@ -19,5 +19,4 @@ struct Hater {
     mutating func hadAGoodDay() {
         hating = false
     }
-    
 }
