@@ -18,6 +18,8 @@
 		80D3511B250FFDE90003D554 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3511A250FFDE90003D554 /* Converter.swift */; };
 		80D3511D250FFEB00003D554 /* ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3511C250FFEB00003D554 /* ConverterTests.swift */; };
 		80D351202510067A0003D554 /* LifecycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3511F2510067A0003D554 /* LifecycleTests.swift */; };
+		80D351232510181C0003D554 /* ThrowingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D351222510181C0003D554 /* ThrowingTests.swift */; };
+		80D35126251018640003D554 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D35125251018640003D554 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		80D3511A250FFDE90003D554 /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 		80D3511C250FFEB00003D554 /* ConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterTests.swift; sourceTree = "<group>"; };
 		80D3511F2510067A0003D554 /* LifecycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifecycleTests.swift; sourceTree = "<group>"; };
+		80D351222510181C0003D554 /* ThrowingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowingTests.swift; sourceTree = "<group>"; };
+		80D35125251018640003D554 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				809B181E250EA603004185DE /* First Test */,
+				80D35124251018200003D554 /* Throwing Tests */,
 				80D35121251006840003D554 /* Lifecycle Tests */,
 				80D3511E250FFECD0003D554 /* Converter Tests */,
 				809B1835250EA60B004185DE /* First TestTests */,
@@ -98,6 +103,7 @@
 				809B182D250EA60A004185DE /* Info.plist */,
 				809B1841250EA78C004185DE /* Hater.swift */,
 				80D3511A250FFDE90003D554 /* Converter.swift */,
+				80D35125251018640003D554 /* Game.swift */,
 			);
 			path = "First Test";
 			sourceTree = "<group>";
@@ -125,6 +131,14 @@
 				80D3511F2510067A0003D554 /* LifecycleTests.swift */,
 			);
 			path = "Lifecycle Tests";
+			sourceTree = "<group>";
+		};
+		80D35124251018200003D554 /* Throwing Tests */ = {
+			isa = PBXGroup;
+			children = (
+				80D351222510181C0003D554 /* ThrowingTests.swift */,
+			);
+			path = "Throwing Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				809B1824250EA603004185DE /* ViewController.swift in Sources */,
+				80D35126251018640003D554 /* Game.swift in Sources */,
 				809B1820250EA603004185DE /* AppDelegate.swift in Sources */,
 				809B1842250EA78C004185DE /* Hater.swift in Sources */,
 				809B1822250EA603004185DE /* SceneDelegate.swift in Sources */,
@@ -243,6 +258,7 @@
 				80D3511D250FFEB00003D554 /* ConverterTests.swift in Sources */,
 				80D351202510067A0003D554 /* LifecycleTests.swift in Sources */,
 				809B1837250EA60B004185DE /* First_TestTests.swift in Sources */,
+				80D351232510181C0003D554 /* ThrowingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
