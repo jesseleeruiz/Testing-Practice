@@ -53,7 +53,7 @@ class AsynchronousTests: XCTestCase {
         let maxCount = 100
         
         // When
-        let progress: () = PrimeCalculator.calculate(upTo: maxCount) {
+        let progress = PrimeCalculator.calculate(upTo: maxCount) {
             XCTAssertEqual($0.count, 25)
         }
         

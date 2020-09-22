@@ -15,6 +15,8 @@
 		809B182C250EA60A004185DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809B182A250EA60A004185DE /* LaunchScreen.storyboard */; };
 		809B1837250EA60B004185DE /* First_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809B1836250EA60B004185DE /* First_TestTests.swift */; };
 		809B1842250EA78C004185DE /* Hater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809B1841250EA78C004185DE /* Hater.swift */; };
+		80C627DC251A8EDA000A59B3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C627DB251A8EDA000A59B3 /* User.swift */; };
+		80C627E1251A8F89000A59B3 /* Notification Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C627E0251A8F89000A59B3 /* Notification Tests.swift */; };
 		80D3511B250FFDE90003D554 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3511A250FFDE90003D554 /* Converter.swift */; };
 		80D3511D250FFEB00003D554 /* ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3511C250FFEB00003D554 /* ConverterTests.swift */; };
 		80D351202510067A0003D554 /* LifecycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3511F2510067A0003D554 /* LifecycleTests.swift */; };
@@ -54,6 +56,8 @@
 		809B1836250EA60B004185DE /* First_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = First_TestTests.swift; sourceTree = "<group>"; };
 		809B1838250EA60B004185DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		809B1841250EA78C004185DE /* Hater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hater.swift; sourceTree = "<group>"; };
+		80C627DB251A8EDA000A59B3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		80C627E0251A8F89000A59B3 /* Notification Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification Tests.swift"; sourceTree = "<group>"; };
 		80D3511A250FFDE90003D554 /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 		80D3511C250FFEB00003D554 /* ConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterTests.swift; sourceTree = "<group>"; };
 		80D3511F2510067A0003D554 /* LifecycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifecycleTests.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				809B181E250EA603004185DE /* First Test */,
+				80C627E5251A8F97000A59B3 /* Notification Tests */,
 				80D35124251018200003D554 /* Throwing Tests */,
 				80D35121251006840003D554 /* Lifecycle Tests */,
 				80D3511E250FFECD0003D554 /* Converter Tests */,
@@ -127,6 +132,7 @@
 				80D3511A250FFDE90003D554 /* Converter.swift */,
 				80D35125251018640003D554 /* Game.swift */,
 				80D3513925113F680003D554 /* PrimeCalculator.swift */,
+				80C627DB251A8EDA000A59B3 /* User.swift */,
 			);
 			path = "First Test";
 			sourceTree = "<group>";
@@ -138,6 +144,14 @@
 				809B1838250EA60B004185DE /* Info.plist */,
 			);
 			path = "First TestTests";
+			sourceTree = "<group>";
+		};
+		80C627E5251A8F97000A59B3 /* Notification Tests */ = {
+			isa = PBXGroup;
+			children = (
+				80C627E0251A8F89000A59B3 /* Notification Tests.swift */,
+			);
+			path = "Notification Tests";
 			sourceTree = "<group>";
 		};
 		80D3511E250FFECD0003D554 /* Converter Tests */ = {
@@ -308,6 +322,7 @@
 				80D35126251018640003D554 /* Game.swift in Sources */,
 				809B1820250EA603004185DE /* AppDelegate.swift in Sources */,
 				80D3513A25113F680003D554 /* PrimeCalculator.swift in Sources */,
+				80C627DC251A8EDA000A59B3 /* User.swift in Sources */,
 				809B1842250EA78C004185DE /* Hater.swift in Sources */,
 				809B1822250EA603004185DE /* SceneDelegate.swift in Sources */,
 				80D3511B250FFDE90003D554 /* Converter.swift in Sources */,
@@ -321,6 +336,7 @@
 				80D3511D250FFEB00003D554 /* ConverterTests.swift in Sources */,
 				80D351202510067A0003D554 /* LifecycleTests.swift in Sources */,
 				809B1837250EA60B004185DE /* First_TestTests.swift in Sources */,
+				80C627E1251A8F89000A59B3 /* Notification Tests.swift in Sources */,
 				80D351232510181C0003D554 /* ThrowingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
