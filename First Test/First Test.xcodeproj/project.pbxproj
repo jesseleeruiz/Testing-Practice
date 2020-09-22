@@ -17,6 +17,8 @@
 		809B1842250EA78C004185DE /* Hater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809B1841250EA78C004185DE /* Hater.swift */; };
 		80C627DC251A8EDA000A59B3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C627DB251A8EDA000A59B3 /* User.swift */; };
 		80C627E1251A8F89000A59B3 /* Notification Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C627E0251A8F89000A59B3 /* Notification Tests.swift */; };
+		80C627F3251A99E5000A59B3 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C627F2251A99E5000A59B3 /* House.swift */; };
+		80C627F8251A9A27000A59B3 /* House Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C627F7251A9A27000A59B3 /* House Tests.swift */; };
 		80D3511B250FFDE90003D554 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3511A250FFDE90003D554 /* Converter.swift */; };
 		80D3511D250FFEB00003D554 /* ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3511C250FFEB00003D554 /* ConverterTests.swift */; };
 		80D351202510067A0003D554 /* LifecycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3511F2510067A0003D554 /* LifecycleTests.swift */; };
@@ -58,6 +60,8 @@
 		809B1841250EA78C004185DE /* Hater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hater.swift; sourceTree = "<group>"; };
 		80C627DB251A8EDA000A59B3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		80C627E0251A8F89000A59B3 /* Notification Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification Tests.swift"; sourceTree = "<group>"; };
+		80C627F2251A99E5000A59B3 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		80C627F7251A9A27000A59B3 /* House Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "House Tests.swift"; sourceTree = "<group>"; };
 		80D3511A250FFDE90003D554 /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 		80D3511C250FFEB00003D554 /* ConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterTests.swift; sourceTree = "<group>"; };
 		80D3511F2510067A0003D554 /* LifecycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifecycleTests.swift; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 				80D35125251018640003D554 /* Game.swift */,
 				80D3513925113F680003D554 /* PrimeCalculator.swift */,
 				80C627DB251A8EDA000A59B3 /* User.swift */,
+				80C627F2251A99E5000A59B3 /* House.swift */,
+				80C627F7251A9A27000A59B3 /* House Tests.swift */,
 			);
 			path = "First Test";
 			sourceTree = "<group>";
@@ -322,6 +328,7 @@
 				80D35126251018640003D554 /* Game.swift in Sources */,
 				809B1820250EA603004185DE /* AppDelegate.swift in Sources */,
 				80D3513A25113F680003D554 /* PrimeCalculator.swift in Sources */,
+				80C627F3251A99E5000A59B3 /* House.swift in Sources */,
 				80C627DC251A8EDA000A59B3 /* User.swift in Sources */,
 				809B1842250EA78C004185DE /* Hater.swift in Sources */,
 				809B1822250EA603004185DE /* SceneDelegate.swift in Sources */,
@@ -338,6 +345,7 @@
 				809B1837250EA60B004185DE /* First_TestTests.swift in Sources */,
 				80C627E1251A8F89000A59B3 /* Notification Tests.swift in Sources */,
 				80D351232510181C0003D554 /* ThrowingTests.swift in Sources */,
+				80C627F8251A9A27000A59B3 /* House Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
