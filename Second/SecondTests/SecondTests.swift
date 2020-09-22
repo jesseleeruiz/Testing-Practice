@@ -30,4 +30,16 @@ class SecondTests: XCTestCase {
         }
     }
 
+    func test4Bed2BathHouse_Fits3Bed2BathRequirements() {
+        // Given
+        let house = House(bedrooms: 4, bathrooms: 2)
+        let desiredBedrooms = 3
+        let desiredBathrooms = 2
+        
+        // When
+        let suitability = house.checkSuitability(desiredBedrooms: desiredBedrooms, desiredBathrooms: desiredBathrooms)
+        
+        // Then
+        XCTAssertTrue(suitability)
+    }
 }
