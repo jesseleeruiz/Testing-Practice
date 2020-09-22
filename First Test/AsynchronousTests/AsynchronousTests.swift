@@ -31,36 +31,42 @@ class AsynchronousTests: XCTestCase {
         }
     }
 
-    func DISABLED_testPtimesUpTo100ShouldBe25() {
-        // Given
-        let maximumCount = 100
-        let expectation = XCTestExpectation(description: "Calculate primes up to \(maximumCount)")
-        
-        // When
-        PrimeCalculator.calculate(upTo: maximumCount) {
-            // Then
-            XCTAssertEqual($0.count, 25)
-            // That sets a maximum value of 100, then asks the prime
-            // calculator to figure out all the primes up to that number.
-            // Finally, it asserts that zero primes were found.
-            expectation.fulfill()
-        }
-        wait(for: [expectation], timeout: 10)
-    }
+//    func DISABLED_testPtimesUpTo100ShouldBe25() {
+//        // Given
+//        let maximumCount = 100
+//        let expectation = XCTestExpectation(description: "Calculate primes up to \(maximumCount)")
+//        
+//        // When
+//        PrimeCalculator.calculate(upTo: maximumCount) {
+//            // Then
+//            XCTAssertEqual($0.count, 25)
+//            // That sets a maximum value of 100, then asks the prime
+//            // calculator to figure out all the primes up to that number.
+//            // Finally, it asserts that zero primes were found.
+//            expectation.fulfill()
+//        }
+//        wait(for: [expectation], timeout: 10)
+//    }
+//    
+//    func DISABLED_testPrimesUpTo100ShouldBe25() {
+//        // Given
+//        let maxCount = 100
+//        
+//        // When
+//        let progress = PrimeCalculator.calculate(upTo: maxCount) {
+//            XCTAssertEqual($0.count, 25)
+//        }
+//        
+//        // Then
+//        let predicate = NSPredicate(format: "%@.completedUnitCount == %@", argumentArray: [progress, maxCount])
+//        
+//        let expectation = XCTNSPredicateExpectation(predicate: predicate, object: progress)
+//        wait(for: [expectation], timeout: 10)
+//    }
     
-    func testPrimesUpTo100ShouldBe25() {
-        // Given
-        let maxCount = 100
-        
-        // When
-        let progress = PrimeCalculator.calculate(upTo: maxCount) {
-            XCTAssertEqual($0.count, 25)
+    func testPrimePerformance() {
+        measure {
+            _ = PrimeCalculator.calculate(upTo: 1_000_000)
         }
-        
-        // Then
-        let predicate = NSPredicate(format: "%@.completedUnitCount == %@", argumentArray: [progress, maxCount])
-        
-        let expectation = XCTNSPredicateExpectation(predicate: predicate, object: progress)
-        wait(for: [expectation], timeout: 10)
     }
 }
