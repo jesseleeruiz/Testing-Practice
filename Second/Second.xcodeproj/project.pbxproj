@@ -16,6 +16,8 @@
 		80C62820251A9B5B000A59B3 /* SecondTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C6281F251A9B5B000A59B3 /* SecondTests.swift */; };
 		80C6282B251A9B5B000A59B3 /* SecondUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C6282A251A9B5B000A59B3 /* SecondUITests.swift */; };
 		80C6283C251A9C77000A59B3 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C6283B251A9C77000A59B3 /* House.swift */; };
+		80C62841251AA78A000A59B3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C62840251AA78A000A59B3 /* User.swift */; };
+		80C62846251AA78F000A59B3 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C62845251AA78F000A59B3 /* App.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		80C6282A251A9B5B000A59B3 /* SecondUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUITests.swift; sourceTree = "<group>"; };
 		80C6282C251A9B5B000A59B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80C6283B251A9C77000A59B3 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		80C62840251AA78A000A59B3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		80C62845251AA78F000A59B3 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				80C62813251A9B5A000A59B3 /* LaunchScreen.storyboard */,
 				80C62816251A9B5A000A59B3 /* Info.plist */,
 				80C6283B251A9C77000A59B3 /* House.swift */,
+				80C62840251AA78A000A59B3 /* User.swift */,
+				80C62845251AA78F000A59B3 /* App.swift */,
 			);
 			path = Second;
 			sourceTree = "<group>";
@@ -264,6 +270,8 @@
 				80C6280D251A9B56000A59B3 /* ViewController.swift in Sources */,
 				80C62809251A9B56000A59B3 /* AppDelegate.swift in Sources */,
 				80C6283C251A9C77000A59B3 /* House.swift in Sources */,
+				80C62846251AA78F000A59B3 /* App.swift in Sources */,
+				80C62841251AA78A000A59B3 /* User.swift in Sources */,
 				80C6280B251A9B56000A59B3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
