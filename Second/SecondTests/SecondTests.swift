@@ -30,7 +30,7 @@ class SecondTests: XCTestCase {
         }
     }
 
-    func test4Bed2BathHouse_Fits3Bed2BathRequirements() {
+    func DISABLED_test4Bed2BathHouse_Fits3Bed2BathRequirements() {
         // Given
         let house = House(bedrooms: 4, bathrooms: 2)
         let desiredBedrooms = 3
@@ -41,5 +41,27 @@ class SecondTests: XCTestCase {
         
         // Then
         XCTAssertTrue(suitability)
+    }
+    
+    func testUserCantBuyUnreleasedApp() {
+        struct UnreleasedAppStub: AppProtocol {
+            var price: Decimal = 0
+            var minimumAge: Int = 0
+            var isReleased: Bool = false
+            
+            func canBePurchased(by user: UserProtocol) -> Bool {
+                return false
+            }
+        }
+        
+        // Given
+        var sut = User(funds: 100, age: 21, apps: [])
+        let app = UnreleasedAppStub()
+        
+        // When
+        let wasBought = sut.buy(app)
+        
+        // Then
+        XCTAssertFalse(wasBought)
     }
 }
