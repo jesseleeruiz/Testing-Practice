@@ -13,6 +13,7 @@ protocol AppProtocol {
     var isReleased: Bool { get set }
     
     func canBePurchased(by user: UserProtocol) -> Bool
+    static func printTerms()
 }
 
 struct App: AppProtocol {
@@ -34,5 +35,11 @@ struct App: AppProtocol {
         } else {
             return false
         }
+    }
+}
+
+extension AppProtocol {
+    static func printTerms() {
+        print("Here are 50 pages of terms and conditions for you to read on a tiny phone screen.")
     }
 }

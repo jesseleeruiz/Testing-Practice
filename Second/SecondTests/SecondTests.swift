@@ -60,8 +60,21 @@ class SecondTests: XCTestCase {
         
         // When
         let wasBought = sut.buy(app)
+        type(of: app).printTerms()
         
         // Then
         XCTAssertFalse(wasBought)
+    }
+    
+    func testViewingHouseAddsOneToViewings() {
+        // Given
+        let buyer = Buyer()
+        let house = HouseMock()
+        
+        // When
+        buyer.view(house)
+        
+        // Then
+        XCTAssertEqual(house.numberOfViewings, 1)
     }
 }
