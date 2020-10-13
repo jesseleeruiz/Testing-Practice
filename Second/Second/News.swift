@@ -7,6 +7,10 @@
 
 import Foundation
 
+protocol URLSessionProtocol {
+    func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask
+}
+
 class News {
     var url: URL
     var stories = ""
@@ -26,3 +30,5 @@ class News {
         task.resume()
     }
 }
+
+extension URLSession: URLSessionProtocol { }
