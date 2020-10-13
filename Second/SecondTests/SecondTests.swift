@@ -10,25 +10,9 @@ import XCTest
 
 class SecondTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    override func setUpWithError() throws { }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+    override func tearDownWithError() throws { }
 
     func DISABLED_test4Bed2BathHouse_Fits3Bed2BathRequirements() {
         // Given
@@ -43,7 +27,7 @@ class SecondTests: XCTestCase {
         XCTAssertTrue(suitability)
     }
     
-    func testUserCantBuyUnreleasedApp() {
+    func DISABLED_testUserCantBuyUnreleasedApp() {
         struct UnreleasedAppStub: AppProtocol {
             var price: Decimal = 0
             var minimumAge: Int = 0
@@ -66,7 +50,7 @@ class SecondTests: XCTestCase {
         XCTAssertFalse(wasBought)
     }
     
-    func testViewingHouseAddsOneToViewings() {
+    func DISABLED_testViewingHouseAddsOneToViewings() {
         // Given
         let buyer = Buyer()
         let house = HouseMock()
@@ -76,5 +60,21 @@ class SecondTests: XCTestCase {
         
         // Then
         XCTAssertEqual(house.numberOfViewings, 1)
+    }
+    
+    /*
+     MOCKING NETWORKING
+     
+     What do we want to test for?
+     
+        1. What was the URL that was requested?
+        2. Was a network request actually started?
+        3. Did the request come back with certain data?
+        4. Did the request come back with a specific error?
+     */
+    
+    // Create mock version of dataTask with empty resume()
+    class DataTaskMock: URLSessionDataTask {
+        override func resume() { }
     }
 }
