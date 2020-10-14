@@ -77,4 +77,34 @@ class SecondTests: XCTestCase {
     class DataTaskMock: URLSessionDataTask {
         override func resume() { }
     }
+    
+    class URLSessionMock: URLSessionProtocol {
+        var lastURL: URL?
+        
+        // URLSessionMock to track last URL.
+        // Using defer to auto call completionHandler and set nil values
+        // Don't care what comes back; just checking URL being requested correctly.
+        func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
+            defer { completionHandler(nil, nil, nil) }
+            lastURL = url
+            return DataTaskMock()
+        }
+    }
+    
+    func testNewsFetchLoadsCorrectURL() {
+        // Given
+        let url = URL(string: "https://www.apple.com/newsroom/rss-feed.rss")!
+        let news = News(url: url)
+        let session = URLSessionMock()
+        let expectation = XCTestExpectation(description: "Downloading news stories.")
+        
+        // When
+        news.fetch(using: session) {
+            XCTAssertEqual(URL(string: "https://www.apple.com/newsroom/rss-feed.rss"), session.lastURL)
+            expectation.fulfill()
+        }
+        
+        // Then
+        wait(for: [expectation], timeout: 5)
+    }
 }
