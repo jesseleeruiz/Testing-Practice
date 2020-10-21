@@ -75,32 +75,48 @@ class SecondTests: XCTestCase {
     
     // Create mock version of dataTask with empty resume()
     class DataTaskMock: URLSessionDataTask {
-        override func resume() { }
-    }
+        var completionHandler: (Data?, URLResponse?, Error?) -> Void
+        var resumeWasCalled = false
+        
+        // Stash away the completion handler so we can call it later
+        
+        init(completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) {
+            self.completionHandler = completionHandler
+        }
+        
+        override func resume() {
+                // Resume was called, so flip our boolean & call the completion
+                resumeWasCalled = true
+                completionHandler(nil, nil, nil)
+            }
+        }
+    
     
     class URLSessionMock: URLSessionProtocol {
-        var lastURL: URL?
+        var testData: Data?
         
         // URLSessionMock to track last URL.
         // Using defer to auto call completionHandler and set nil values
         // Don't care what comes back; just checking URL being requested correctly.
         func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
-            defer { completionHandler(nil, nil, nil) }
-            lastURL = url
+            
+            defer {
+                completionHandler(testData, nil, nil)
+            }
             return DataTaskMock()
         }
     }
     
-    func testNewsFetchLoadsCorrectURL() {
+    func testNewsFetchCallsResume() {
         // Given
         let url = URL(string: "https://www.apple.com/newsroom/rss-feed.rss")!
         let news = News(url: url)
         let session = URLSessionMock()
-        let expectation = XCTestExpectation(description: "Downloading news stories.")
+        let expectation = XCTestExpectation(description: "Downloading news stories triggers resume().")
         
         // When
         news.fetch(using: session) {
-            XCTAssertEqual(URL(string: "https://www.apple.com/newsroom/rss-feed.rss"), session.lastURL)
+            XCTAssertTrue(session.dataTask?.resumeWasCalled ?? false)
             expectation.fulfill()
         }
         
