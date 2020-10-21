@@ -15,6 +15,7 @@
 		809F76092540B4F500854158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809F76072540B4F500854158 /* LaunchScreen.storyboard */; };
 		809F76142540B4F500854158 /* TDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809F76132540B4F500854158 /* TDDTests.swift */; };
 		809F761F2540B4F500854158 /* TDDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809F761E2540B4F500854158 /* TDDUITests.swift */; };
+		809F76302540B59B00854158 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809F762F2540B59B00854158 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		809F761A2540B4F500854158 /* TDDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		809F761E2540B4F500854158 /* TDDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDUITests.swift; sourceTree = "<group>"; };
 		809F76202540B4F500854158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		809F762F2540B59B00854158 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				809F76052540B4F500854158 /* Assets.xcassets */,
 				809F76072540B4F500854158 /* LaunchScreen.storyboard */,
 				809F760A2540B4F500854158 /* Info.plist */,
+				809F762F2540B59B00854158 /* User.swift */,
 			);
 			path = TDD;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				809F76302540B59B00854158 /* User.swift in Sources */,
 				809F76012540B4F300854158 /* ViewController.swift in Sources */,
 				809F75FD2540B4F300854158 /* AppDelegate.swift in Sources */,
 				809F75FF2540B4F300854158 /* SceneDelegate.swift in Sources */,
